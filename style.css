@@ -341,9 +341,6 @@ h2{
 
 
 
-/* ... (your existing styles) ... */
-
-/* Testimonials section */
 .testimonials {
   text-align: center;
   padding: 80px 0;
@@ -494,16 +491,16 @@ h2{
 .course-col { transition: transform 0.5s; }
 
 .course-col:hover { transform: rotate(10deg); }
-/* ... (your existing styles) ... */
 
-/* Styling the navigation bar */
+
+
 nav {
   display: flex;
   padding: 20px 6%;
   justify-content: space-between;
   align-items: center;
-  background-color: #333; /* Change the background color */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-color: #333; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .nav-links ul {
@@ -525,15 +522,15 @@ nav {
 }
 
 .nav-links ul li:hover a {
-  color: #f44336; /* Change color on hover */
+  color: #f44336; 
 }
 
-/* Adding animation to the navigation links */
+
 .nav-links ul li::after {
   content: '';
   width: 0;
   height: 2px;
-  background: #f44336; /* Animation color */
+  background: #f44336; 
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -542,7 +539,7 @@ nav {
 }
 
 .nav-links ul li:hover::after {
-  width: 100%; /* Expand the line on hover */
+  width: 100%; 
 }
 
 
@@ -567,7 +564,7 @@ nav {
 
 
 
-/* ... (your existing styles) ... */
+
 
 /* Footer section */
 .footer {
