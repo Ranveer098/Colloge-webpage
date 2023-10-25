@@ -6,8 +6,8 @@
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(25, 40, 98, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/srm.jpg);
+  background-image: linear-gradient(rgba(173, 216, 230, 0.7), rgba(70, 130, 180, 0.7)), url(images/banner.png);
+
 
   background-position: center;
   background-size: cover;
@@ -248,7 +248,7 @@ h2{
   }
 } 
 
-.facilities{
+/* .facilities{
   width:80%;
   margin: auto;
   text-align: center;
@@ -277,8 +277,139 @@ h2{
   margin-bottom: 15px;
   font-weight: 600;
   text-align: left;
+} */
+
+/* ... (your existing styles) ... */
+
+/* Facilities section */
+.facilities {
+  text-align: center;
+  padding: 80px 0;
+  background-image: linear-gradient(rgba(173, 216, 230, 0.9), rgba(70, 130, 180, 0.9)), url(images/banner.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
+.facilities h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.facilities-col {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(214, 159, 159, 0.1);
+  padding: 20px;
+}
+
+.facilities-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.facilities-col h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.facilities-col:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.facilities-col:hover img {
+  transform: translateY(-10px);
+}
+
+.facilities-col:hover h3 {
+  transform: translateY(-10px);
+}
+
+
+
+
+/* ... (your existing styles) ... */
+
+/* Testimonials section */
+.testimonials {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.testimonials h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.testimonials-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials-col img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.testimonials-col h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonials-col p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.testimonials-col .fa-star {
+  color: #f44336;
+  font-size: 24px;
+}
+
+.testimonials-col:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-col:hover img {
+  transform: scale(1.1);
+}
+
+/* 
 .testimonials{
   width: 80%;
   margin: auto;
@@ -320,7 +451,7 @@ h2{
   font-size: 20px;
   margin-right: 10px;
 
-}
+} */
 
 @media(max-width: 700px){
   .testimonials-col img{
@@ -356,17 +487,133 @@ h2{
 
 
 
-.footer{
-  width: 100%;
+
+
+
+.text-box { animation: slideInLeft 1s; }
+.course-col { transition: transform 0.5s; }
+
+.course-col:hover { transform: rotate(10deg); }
+/* ... (your existing styles) ... */
+
+/* Styling the navigation bar */
+nav {
+  display: flex;
+  padding: 20px 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Change the background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li:hover a {
+  color: #f44336; /* Change color on hover */
+}
+
+/* Adding animation to the navigation links */
+.nav-links ul li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #f44336; /* Animation color */
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%; /* Expand the line on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ... (your existing styles) ... */
+
+/* Footer section */
+.footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
   padding: 30px 0;
 }
-.footer h4{
-  margin-bottom: 25px;
-  margin-top: 20px;
-  font-weight: 600;
+
+.footer h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
- 
 
-  
+.footer p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
 
+.icons {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.icons i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Back to top button */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: #333;
+}
